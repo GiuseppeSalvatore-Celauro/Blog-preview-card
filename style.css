@@ -1,0 +1,68 @@
+
+/* - Mobile: 375px
+- Desktop: 1440px */
+
+
+
+:root{
+    --f-style: 'Figtree', sans-serif;
+    --fw-first: 600;
+    --fw-second: 800;
+    --f-size: 16px;
+    --c-primary: hsl(47, 88%, 63%);
+    --c-neutral-white:hsl(0, 0%, 100%);
+    --c-neutral-gray:hsl(0, 0%, 50%);
+    --c-neutral-black:hsl(0, 0%, 7%);
+}
+
+*{
+    box-sizing: border-box;
+    font-size: var(--f-size);
+    margin: 0;
+    padding: 0;
+    font-weight: var(--fw-first);
+}
+
+body{
+    background-color: var(--c-primary);
+}
+
+.card-custom{
+    background-color: var(--c-neutral-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    box-shadow: 20px 20px 0px 0px rgb(0,0,0);
+}
+.img-custom{
+    width: 100%;
+    margin-bottom: 1.3rem;
+}
+.category{
+    background-color: var(--c-primary);
+    padding: 0.3rem 1.5rem;
+    border-radius: 5px;
+    font-weight: var(--fw-second);
+}
+
+.card-custom,
+.img-custom{
+    border-radius: 15px;
+}
+
+.card-body-custom>h3{
+    color: var(--c-primary);
+    font-weight: var(--fw-second);
+    cursor: pointer;
+}
+
+.person>img{
+    width: 50px;
+    height: 50px;
+}
+.person>p{
+    margin-top: 5px;
+    font-weight: var(--fw-second);
+}
